@@ -1,2 +1,3 @@
-# books-recommender
-Recommendation System for Moscow Libraries
+# Рекомендательная система для московских библиотек
+
+В данном репозитории содержится скрипт, генерирующий рекомендации
