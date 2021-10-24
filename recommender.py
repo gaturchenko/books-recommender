@@ -27,7 +27,7 @@ def get_recommendation(user_id, model, dataset, df, mapping, n_rec=5):
   preds = np.delete(preds, books_ids_map, axis=0)
 
   item_ids = []
-  while n_rec >= 0:
+  while n_rec > 0:
     ind = np.where(preds == np.max(preds))[0][0]
     item_ids.append(list(user_item_map[2].keys())[list(user_item_map[2].values()).index(ind)])
     preds = np.delete(preds, ind, axis=0)
